@@ -39,11 +39,11 @@ defmodule GRPC.Mixfile do
 
   defp deps do
     [
-      {:cowboy, "~> 2.9"},
+      {:cowboy, "2.11.0"},
       # This is the same as :gun 2.0.0-rc.2,
       # but we can't depend on an RC for releases
       {:gun, "~> 2.0.1", hex: :grpc_gun},
-      {:cowlib, "~> 2.11"},
+      {:cowlib, "2.13.0"},
       {:protobuf, "~> 0.10", only: [:dev, :test]},
       {:ex_doc, "~> 0.28", only: :dev},
       {:inch_ex, "~> 2.0", only: [:dev, :test]},
